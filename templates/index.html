@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../static/slick/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/slick/slick/slick-theme.css"/>
     <link rel="stylesheet" href="../static/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../static/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../static/img/favicon/favicon-32x32.png">
@@ -21,7 +23,7 @@
     <aside id="header">
         <section class="profile">
             <img src="../static/img/profile.jpg" alt="Joice">
-            <h1>Joice S. Oliveira</h1>
+            <h1>Joice Oliveira</h1>
             <div class="social-links mt-4 text-center">
                 <a href="https://www.linkedin.com/in/joice-sousa-b98249180/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
                 <a href="https://www.instagram.com/conversaepsicologia/"  target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
@@ -37,7 +39,7 @@
                   <a class="nav-link" href="#sobre"><i class="bi bi-file-person"></i> Sobre</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#especializacao"><i class="bi bi-book-half"></i> Especialiação</a>
+                  <a class="nav-link" href="#atuacao"><i class="bi bi-chat-dots"></i> Atuação</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contato"><i class="bi bi-envelope"></i> Contato</a>
@@ -51,9 +53,9 @@
 
     <main id="main">
         <section id="inicio" class="row m-0 p-0">
-            <div id="nome-crp" class="col-md-12d-flex justify-content-start align-itens-start flex-column " >
-                <h2  class="text-white text-shadow">Joice Sousa Oliveira</h2>
-                <span id="subtitle" class="text-white text-shadow">CRP 123123-0</span>
+            <div id="nome-crp" class="col-md-12 d-flex justify-content-start align-itens-start flex-column " >
+                <h2  class="text-white text-shadow">Joice Oliveira</h2>
+                <span id="crp" class="text-white text-shadow pt-1">CRP 123123-0</span>
             </div>
             <div class="col-md-12 d-flex align-items-end justify-content-end">
                 <div id="mensagem" class="row justify-content-center ">
@@ -63,61 +65,66 @@
             </div>
         </section> 
 
-        <section id="sobre" class="container mt-5">
-            <div class="row w-100">
-                <div class="col-md-12">
-                    <h2 class="pt-3">Sobre</h2>
-                    <p>O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.</p>
+        <section id="sobre" class="container mt-1">
+            <div class="row w-100 ">                
+                <div class="col-md-7">
+                    <h2 class="text-center pt-3">Olá!</h2>
+                    <p>Meu nome é Joice Oliveira, sou formada pela Universidade Paulista de Ribeirão Preto em 2019. Possuo pós-graduação e experiência significativa em atendimentos voltados para o Transtorno do Espectro Autista (TEA), tanto com o público infantil quanto com adultos. Minha abordagem em psicoterapia é centrada no enfoque fenomenológico-existencial, buscando compreender a singularidade de cada indivíduo e suas experiências de vida. Além disso, tenho ampla vivência em ministrar palestras e treinamentos.</p>
                 </div>
-                <div class="row mt-4">
-                    <div class="col-md-5">
-                        <img class="img-fluid shadow" src="../static/img/about.png" alt="Foto de perfil">
-                    </div>
-                    <div class="col-md-7 mt-4">
-                        <ul class="list-group list-group-flush fw-bold">
-                            <li class="list-group-item">
-                                Formação: <span class="fw-lighter">Bacharel em Psicologia na UNIP Ribeirão Preto - 2019</span>
-                            </li>
-                            <li class="list-group-item">
-                                Pós Graduação: <span class="fw-lighter">Metodo ABA não sei onde</span>
-                            </li>
-                            <li class="list-group-item">
-                                Experiência: <span class="fw-lighter">Exemplo</span>
-                            </li>
-                            <li class="list-group-item">
-                                Formação: <span class="fw-lighter">Bacharel em Psicologia na UNIP Ribeirão Preto - 2019</span>
-                            </li>
-                            <li class="list-group-item">
-                                Pós Graduação: <span class="fw-light">Metodo ABA não sei onde</span>
-                            </li>
-                            <li class="list-group-item">
-                                Experiência: <span class="fw-lighter">Exemplo</span>
-                            </li>
-                        </ul>                       
-                    </div>
+                <div class="col-md-5 d-flex align-items-end justify-content-end">
+                    <img id="fotoSobre" class="img-fluid" src="../static/img/about.jpeg" alt="Foto de perfil">
                 </div>
             </div>
         </section>
 
-        <section id="especializacao" class="container mt-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Especialiação</h2>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h5>Terapia</h5>
-                            <p>Terapia presencial ou remota</p>
-                            <h5>Terapia</h5>
-                            <p>Terapia presencial ou remota</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h5>Terapia</h5>
-                            <p>Terapia presencial ou remota</p>
-                            <h5>Terapia</h5>
-                            <p>Terapia presencial ou remota</p>
-                        </div>
+        <section id="atuacao" class="container mt-1">
+            <h2 class="text-center center pt-3">Atuação</h2>
+            <div class="row w-100 slider-responsive text-center">
+                <div class="row g-0 align-items-center">
+                    <div class="col">
+                      <img src="../static/img/carousel/icone1.png" class="card-img" alt="...">
                     </div>
-                </div>
+                    <div class="col">
+                      <div class="card-body">
+                        <h5 class="card-title">Transtorno do Espectro Autista</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-0">
+                    <div class="col">
+                      <img src="../static/img/carousel/icone2.png" class="card-img img-fluid center" alt="...">
+                    </div>
+                    <div class="col">
+                      <div class="card-body">
+                        <h5 class="card-title">Transtorno do Espectro Autista</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-0">
+                    <div class="col">
+                      <img src="../static/img/carousel/icone3.png" class="card-img img-fluid" alt="...">
+                    </div>
+                    <div class="col">
+                      <div class="card-body">
+                        <h5 class="card-title">Transtorno do Espectro Autista</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-0">
+                    <div class="col">
+                      <img src="../static/img/carousel/icone4.png" class="card-img img-fluid" alt="...">
+                    </div>
+                    <div class="col">
+                      <div class="card-body">
+                        <h5 class="card-title">Transtorno do Espectro Autista</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
             </div>
         </section>
 
@@ -125,6 +132,8 @@
 
     </main>
 
+    <script type="text/javascript" src="../static/jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../static/slick/slick/slick.min.js"></script>
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/script.js"></script>
 </body>
