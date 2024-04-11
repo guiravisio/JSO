@@ -90,7 +90,7 @@ html, body{
 }
 
 section#inicio{
-    background-image: url("./img/bg.jpg");
+    background-image: url("./img/bg2.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -161,9 +161,13 @@ i.menu-mobile{
 }
 
 section#atuacao{
-    background-color: rgba(238, 238, 238, 0.8);
+    background-color: #e6e6e6;
 }
 
+section#atuacao img#terapia{
+    margin: auto;
+    height: 20rem;
+}
 .slider-responsive {
     padding: 1rem;
     justify-content: center;
