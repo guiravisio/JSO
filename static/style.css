@@ -154,28 +154,87 @@ i.menu-mobile{
     left: 0;
 }
 
+section#sobre p{
+    font-size: x-large;
+    vertical-align: middle;
+}
 #fotoSobre{
     width: 100%;
     margin-right: 0;
     display: block;
 }
 
-section#atuacao{
+section#servicos{
     background-color: #e6e6e6;
 }
 
-section#atuacao img#terapia{
+section#servicos p{
+    margin: 2rem;
+}
+
+section#servicos img#terapia{
     margin: auto;
     height: 20rem;
 }
+
 .slider-responsive {
     padding: 1rem;
     justify-content: center;
+}
+
+.card{
+    height: 28rem;
+    margin: 2rem;
+    border-style: solid;   
 }
 .card-img{
     width: 10rem;
     margin: auto;
     padding: 1rem;
+}
+
+section#contato p#endereco{
+    font-size: smaller;
+}
+
+.mensagem {
+    padding: 0;
+}
+
+textarea{
+    resize: none;
+}
+
+.btn-secondary{
+    background-color: #3f5169;
+}
+
+/* Animação */
+
+[data-anime]{
+    opacity: 0;
+    transition:  1s;
+}
+
+[data-anime="down"]{
+    transform: translate3d(0, -100%, 0);
+}
+
+[data-anime="up"]{
+    transform: translate3d(0, 100%, 0);
+}
+
+[data-anime="left"]{
+    transform: translate3d(-100%, 0, 0);
+}
+
+[data-anime="right"]{
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
 
 @media (max-width: 1024px){
@@ -194,6 +253,12 @@ section#atuacao img#terapia{
     }
     #main{
         margin-left: 0;
+    }
+}
+
+@media (max-width: 730px){
+    .card{
+        height: auto; 
     }
 }
 

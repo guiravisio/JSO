@@ -22,13 +22,34 @@ navItem.forEach(item => {
     })
 })
 
+/* Animação */
+
+const item = document.querySelectorAll("[data-anime");
+
+const animeScroll = () => {
+  const windowTop = window.scrollY + window.innerHeight * 0.85; 
+  
+  item.forEach(element => {
+    if (windowTop > element.offsetTop){
+      element.classList.add("animate");
+    }
+  })
+
+}
+
+animeScroll()
+
+window.addEventListener("scroll", ()=>{
+  animeScroll();
+})
+
 $('.slider-responsive').slick({
     dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     responsive: [
       {

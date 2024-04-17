@@ -39,6 +39,9 @@
                   <a class="nav-link" href="#sobre"><i class="bi bi-file-person"></i> Sobre</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="#servicos"><i class="bi bi-suitcase-lg"></i> Serviços</a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="#atuacao"><i class="bi bi-chat-dots"></i> Atuação</a>
                 </li>
                 <li class="nav-item">
@@ -50,8 +53,8 @@
 
 
     </aside>
-
     <main id="main">
+
         <section id="inicio" class="row m-0 p-0">
             <div id="nome-crp" class="col-md-12 d-flex justify-content-start align-itens-start flex-column " >
                 <h2  class="text-white text-shadow">Joice Oliveira</h2>
@@ -67,36 +70,44 @@
         </section> 
 
         <section id="sobre" class="container mt-1">
-            <div class="row w-100 ">                
-                <div class="col-md-7">
+            <div class="row w-100">                
+                <div class="col-md-7" data-anime="down">
                     <h2 class="text-center pt-3">Olá!</h2>
                     <p>Meu nome é Joice Oliveira, sou formada pela Universidade Paulista de Ribeirão Preto em 2019. Possuo pós-graduação e experiência significativa em atendimentos voltados para o Transtorno do Espectro Autista (TEA), tanto com o público infantil quanto com adultos. Minha abordagem em psicoterapia é centrada no enfoque fenomenológico-existencial, buscando compreender a singularidade de cada indivíduo e suas experiências de vida. Além disso, tenho ampla vivência em ministrar palestras e treinamentos.</p>
                 </div>
-                <div class="col-md-5 d-flex align-items-end justify-content-end">
+                <div class="col-md-5 d-flex align-items-end justify-content-end" data-anime="right">
                     <img id="fotoSobre" class="img-fluid" src="../static/img/about.jpeg" alt="Foto de perfil">
                 </div>
             </div>
         </section>
 
-        <section id="atuacao" class="container mt-1">
-            <h2 class="text-center center pt-3">Atuação</h2>
+        <section id="servicos" class="container mt-1">
+            <h2 class="text-center center pt-3">Serviços</h2>
             <div class="row">
-              <div class="col-md-6 text-center">
+              <div class="col-md-6 text-center" data-anime="left">
                   <img id="terapia" src="../static/img/terapiaonline.png" class="img-fluid" alt="...">
                   <h3>Psicoterapia Online</h3>
                   <p class="text-center pt-3">Regulamentada pela Resolução CFP nº 011/2018 e Resolução CFP nº 004/2020, a psicoterapia online oferece uma alternativa conveniente e acessível para aqueles que buscam apoio emocional e psicológico. Os benefícios incluem maior flexibilidade de horários e a capacidade de participar das sessões no conforto de casa.</p>
               </div>
-              <div class="col-md-6 text-center">
+              <div class="col-md-6 text-center" data-anime="right">
                   <img id="terapia" src="../static/img/terapiapresencial.png" class="img-fluid" alt="...">
                   <h3>Psicoterapia Presencial</h3>
                   <p class=" text center pt3">A psicoterapia oferece uma série de benefícios, incluindo promover o autoconhecimento, desenvolver habilidades de enfrentamento, melhorar os relacionamentos, aumentar a resiliência, reduzir os sintomas de saúde mental, favorecer o crescimento pessoal e promover a tomada de decisão consciente. Essa forma de terapia proporciona um espaço seguro para explorar emoções, pensamentos e comportamentos, visando o bem-estar mental e emocional do indivíduo.</p>
               </div>
             </div>
+            <div class="row p-3">
+              <div class="col-md-12 d-flex justify-content-center">
+                
+                <a class="btn btn-secondary" target="_blank" href="https://api.whatsapp.com/send?phone=5516993583754&text=Ol%C3%A1,%20visitei%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta"><i class="bi bi-whatsapp"></i> Agende agora</a>
+              </div>
+              
+            </div>
         </section>
-        <section id="comoPosso" class="container mt-1">
-            <h3 class="text-center pt-3">Como posso te ajudar?</h3>
+
+        <section id="atuacao" class="container mt-1">
+            <h3 class="text-center pt-3">Principais demandas</h3>
             <div class="row w-100 slider-responsive text-center">
-              <div class="row g-0">
+              <div class="card">
                 <div class="col">
                   <img src="../static/img/carousel/icone4.png" class="card-img img-fluid" alt="...">
                 </div>
@@ -107,7 +118,7 @@
                   </div>
                 </div>
               </div>
-              <div class="row g-0">
+              <div class="card">
                   <div class="col">
                     <img src="../static/img/carousel/icone1.png" class="card-img" alt="...">
                   </div>
@@ -118,7 +129,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row g-0">
+                <div class="card">
                   <div class="col">
                     <img src="../static/img/carousel/icone2.png" class="card-img img-fluid center" alt="...">
                   </div>
@@ -129,7 +140,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row g-0">
+                <div class="card">
                   <div class="col">
                     <img src="../static/img/carousel/icone3.png" class="card-img img-fluid" alt="...">
                   </div>
@@ -145,9 +156,53 @@
             </div>
         </section>
 
-
-
+        <section id="contato" class="container mt-1">
+          <h3 class="text-center pt-3">Contato</h3>
+          <div class="row">
+            <div class="col-md-5">
+              <div class="card p-3 shadow border-0">
+                <div class="endereco">
+                  <h5><i class="bi bi-geo-alt"></i>  Atendimento Presencial</h4>
+                  <p id="endereco">R. Conde Afonso Celso, 1576 - Jardim Sumare, Ribeirão Preto - SP, 14025-040</p>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.005175070826!2d-47.810780225106924!3d-21.191953378842854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bfe8042bbda7%3A0x9aa30aa3f72bed2a!2sCacto%20-%20Espa%C3%A7o%20Terapeutico!5e0!3m2!1spt-BR!2sbr!4v1713097056283!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="w-100" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="card p-3 shadow border-0">
+                <div class="mensagem">
+                  <h5><i class="bi bi-send"></i>  Envie uma mensagem</h4>
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea type="text" class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem..."></textarea>
+                      </div>
+                      <div class="col-md-12 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-secondary">Enviar</button>
+                      </div>
+                      <div class="col-md-12 d-flex justify-content-center">
+                        <p>Ou</p>
+                      </div>
+                      <div class="col-md-12 d-flex justify-content-center m-0 p-0">
+                        <a class="btn btn-secondary" target="_blank" href="https://api.whatsapp.com/send?phone=5516993583754&text=Ol%C3%A1,%20visitei%20seu%20site%20e%20gostaria%20de%20agendar%20uma%20consulta"><i class="bi bi-whatsapp"></i> Entre em contato pelo WhatsApp</a>
+                      </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
     </main>
+
 
     <script type="text/javascript" src="../static/jquery/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="../static/slick/slick/slick.min.js"></script>
