@@ -220,6 +220,18 @@ textarea{
     right: 30px;
 }
 
+#footer{
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 9999;
+    background-color: #3f5169;
+    transition: .3s;
+}
 
 /* Animação */
 
@@ -266,9 +278,14 @@ textarea{
     #main{
         margin-left: 0;
     }
+    #footer{
+        position: static;
+        width: auto;
+        padding: 20px 15px;
+    }
 }
 
-@media (max-width: 730px){
+@media (max-width: 1244px){
     .card{
         height: auto; 
     }
