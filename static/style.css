@@ -209,6 +209,18 @@ textarea{
     background-color: #3f5169;
 }
 
+#btn-enviando{
+    display: none;
+}
+
+#alerta{
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+}
+
+
 /* Animação */
 
 [data-anime]{

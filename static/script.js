@@ -43,6 +43,19 @@ window.addEventListener("scroll", ()=>{
   animeScroll();
 })
 
+const btnEnviar = document.querySelector('#btn-enviar')
+const btnEnviando = document.querySelector('#btn-enviando')
+
+btnEnviar.addEventListener("click", ()=>{
+  btnEnviando.style.display = "block";
+  btnEnviar.style.display = "none"
+})
+
+setTimeout(()=>{
+  document.querySelector('#lerta').style.display = 'none';
+
+}, 5000)
+
 $('.slider-responsive').slick({
     dots: true,
     infinite: true,

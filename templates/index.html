@@ -172,21 +172,25 @@
               <div class="card p-3 shadow border-0">
                 <div class="mensagem">
                   <h5><i class="bi bi-send"></i>  Envie uma mensagem</h4>
-                    <form class="row g-3">
+                    <form class="row g-3" action='/send' method="POST">
                       <div class="col-md-6">
                         <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" name="nome" required>
                       </div>
                       <div class="col-md-6">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                        <input type="email" class="form-control" id="email" placeholder="Digite seu email" name="email" required>
                       </div>
                       <div class="col-md-12">
                         <label for="mensagem" class="form-label">Mensagem</label>
-                        <textarea type="text" class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem..."></textarea>
+                        <textarea type="text" class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem..." required></textarea>
                       </div>
                       <div class="col-md-12 d-flex justify-content-center">
-                        <button type="submit" class="btn btn-secondary">Enviar</button>
+                        <button id="btn-enviar" type="submit" class="btn btn-secondary">Enviar</button>
+                        <button id="btn-enviando" class="btn btn-secondary" type="button" disabled>
+                          <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                          <span role="status">Enviando...</span>
+                        </button>
                       </div>
                       <div class="col-md-12 d-flex justify-content-center">
                         <p>Ou</p>
